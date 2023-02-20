@@ -1,0 +1,193 @@
+body {
+    font-family: "Inter";
+    background-color: #E4E0DC;
+    color: #2A3965;
+}
+
+@media (min-width: 600px) {
+    main, footer{
+        padding-left: 20vw;
+        padding-right: 20vw;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 20px;
+        color: #E4E0DC;
+    }
+
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #2A3965;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+nav ul li {
+    color: #E4E0DC;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #2A3965;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+footer ul li{
+    display: inline;
+}
+
+h1, h2 {
+    font-family: "Roboto Slab";
+    text-decoration: none;
+}
+
+h1 {
+    display: inline;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+header a, header a:visited{
+    color: #E4E0DC;
+    white-space: nowrap;
+}
+
+main a, main a:visited {
+    color: #012661;
+}
+
+
+footer a, footer a:visited {
+    padding: 4px;
+    color: #012661;
+}
+
+header a.current {
+    color: #99D1EB;
+}
+
+header a:hover {
+    color: #96BF36;
+}
+
+footer a:hover, main a:hover {
+    color: #647F24;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    text-align:center;
+    max-width: 375px;
+    overflow: hidden;
+}
+
+footer img {
+    display: inline;
+    max-height: 25px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+main p {
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+main ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, th, td{
+    border-collapse: collapse;
+    border: 1px solid #2A3965;
+    padding: 3px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #2A3965;
+    color: #DDEFF8;
+}
+
+td {
+    padding-right: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: #CFE59F;
+}
+
+tr:nth-child(even)  {
+    background-color: #A0C940;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+form {
+    padding: 10px;
+    display: block;
+}
+
+input {
+    margin: 5px 5px 10px 10px;
+}
+
+fieldset {
+    margin: 10px 0px 10px 0px;
+}
+
+.button {
+    background-color: #2A3965;
+    color: white;
+    border: 2px solid #2A3965;
+    border-radius: 4px;
+}
+
+.button:hover {
+    color: #A0C940;
+}
+
+.indented {
+    padding-left: 30px;
+}
