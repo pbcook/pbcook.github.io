@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>First JavaScripts | Parker Cook's Popular Cheetah | ITIS 3135</title>
+        <title>Home | Parker Cook's Popular Cheetah | ITIS 3135</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/default.css">
-        <script src="scripts/default.js"></script>
     </head>
     <body>
         <header>
             <nav>
                 <ul>
                     <li><h1>Parker Cook's Popular Cheetah</h1></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="introduction.html">Intro</a></li>
                     <li><a href="contract.html">Contract</a></li>
                     <li><a href="tables.html">Tables</a></li>
                     <li><a href="forms.html">Forms</a></li>
                     <li><a href="stuff/@M@Z1NG%20f1l3💯.htm">Crappy</a></li>
                     <li><a href="website_evaluations.html">Website Evaluations</a></li>
-                    <li><a href="firstscripts.html" class="current">First JavaScripts</a></li>
+                    <li><a href="firstscripts.html">First JavaScripts</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>First JavaScripts</h2>
-            <h3 id="dateandtime">If you can see this, there's a problem</h3>
-            <h3>Build your own greeting:</h3>
-            <div class="indented">
-                <label for="name">Name: <input type="text" id="name"></label>
-                <label for="feeling">How you're feeling: <input type="text" id="feeling"></label>
-                <button onclick=greetMe()>Greet me</button>
-                <p id="greeting"></p>
-            </div>
-            <div class="indented">
-                <button onclick=growl()>Cheetah sound</button>
-                <button onclick=askForNumber()>Ask the cheetah for  a number</button>
-                <button onclick=beQuiet()>Tell the cheetah to go away</button>
-                <button onclick=displayImage()>Reveal a cool cheetah picture</button>
-                <button onclick=giveFood()>Feed the cheetah</button>
-            </div>
-            <img id="cheetah_pic" src="#" alt="">
+            <h2>Hi! Welcome to Parker Cook's Popular Cheetah</h2>
+            <img src="https://images.pexels.com/photos/1320598/pexels-photo-1320598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="A cool cheetah">
+            <p>Here you'll find the various assignments and pages for Parker Cook's Popular Cheetah, a part of the ITIS-3135 course. Use the navigation menu above to view the various pages. Or look below for links to my other pages (GitHub, Codecademy, etc.) and validation links.</p>
         </main>
         <footer>
             <p>Glad you could make it. Come back early and often for updates.</p>
@@ -56,8 +41,12 @@
                 <li><a href="https://www.codecademy.com/profiles/pbcook">Codecademy</a></li>
                 <li><a href="https://www.linkedin.com/in/pbcook314/">Linkedin</a></li>
             </ul>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fpcook22%2Fitis3135%2Ffirstscripts.html" target="_blank"><img src="images/button_validation_html5.png" alt="HTML 5 validation"></a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fpcook22%2Fitis3135%2Ffirstscripts.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="images/button_validation_css.png" alt="CSS validation"></a>
+            <a href="https://validator.w3.org/check?uri=referer" class="validation_link_html" target="_blank">
+                <img src="images/button_validation_html5.png" alt="Validate webpage HTML.">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" class="validation_link_html" target="_blank">
+                <img src="images/button_validation_css.png" alt="Validate webpage CSS.">
+            </a>
             <p>Site designed by <a href="https://webpages.charlotte.edu/pcook22/itis3135/cookcreativedesign.co/">Cook Creative Design Co.</a> &copy;2023</p>
         </footer>
     </body>

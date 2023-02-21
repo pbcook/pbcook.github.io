@@ -88,6 +88,10 @@ footer a, footer a:visited {
     color: #012661;
 }
 
+.imageLink {
+    text-decoration: none;
+}
+
 header a.current {
     color: #99D1EB;
 }
