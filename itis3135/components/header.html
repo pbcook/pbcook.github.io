@@ -1,0 +1,74 @@
+<header>
+    <h1>Parker Cook's Popular Cheetah</h1>
+    <nav>
+        <div id="mainLinks"></div>
+        <div id="externalLinks"></div>
+        <!-- <a href="index.html">Home</a>
+        <a href="introduction.html">Intro</a>
+        <a href="contract.html">Contract</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="stuff/@M@Z1NG%20f1l3💯.htm">Crappy</a>
+        <a href="website_evaluations.html">Website Evaluations</a>
+        <a href="firstscripts.html">First JavaScripts</a> -->
+    </nav>
+</header>
+<script>
+    const path = String(location.pathname.split("/").splice(-1));
+    const links = {
+        "1": {
+            "url": "index.html",
+            "text": "Home",
+            "alt": "Homepage"
+        },
+        "2": {
+            "url": "introduction.html",
+            "text": "Intro",
+            "alt": "Personal introduction"
+        },
+        "3": {
+            "url": "contract.html",
+            "text": "Contract",
+            "alt": "Class contract"
+        },
+        "4": {
+            "url": "tables.html",
+            "text": "Tables",
+            "alt": "Tables assignment"
+        },
+        "5": {
+            "url": "forms.html",
+            "text": "Forms",
+            "alt": "Forms assignment"
+        },
+        "6": {
+            "url": "website_evaluations.html",
+            "text": "Website Evaluations",
+            "alt": "Website evaluations assignment"
+        },
+        "7": {
+            "url": "firstscripts.html",
+            "text": "First JavaScripts",
+            "alt": "Simple JavaScript assignment"
+        },
+        "8": {
+            "url": "polygons.html",
+            "text": "Polygons",
+            "alt": "Polygons JavaScript assignment"
+        }
+    };
+    const linkSeparator = " | ";
+    let htmlString = ""
+
+    for (var id in links) {
+        if (path === links[id]["url"]) {
+            htmlString += "<a href='" + links[id]["url"] + "' class='active'>" + links[id]["text"] + "</a>";
+        } else {
+            htmlString += "<a href='" + links[id]["url"] + "'>" + links[id]["text"] + "</a>";
+        }
+        if (Number(id) < Object.keys(links).length) {
+            htmlString += linkSeparator;
+        }
+    }
+    $("#mainLinks").html(htmlString);
+</script>
