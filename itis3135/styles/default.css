@@ -1,6 +1,7 @@
 body {
     font-family: "Inter";
-    background-color: #E4E0DC;
+    background-color: #e6f6ff;
+    /* background-color: #E4E0DC; */
     color: #2A3965;
 }
 
@@ -31,6 +32,7 @@ nav {
     padding: 0 15px 15px 15px;
     width: 100%;
     text-align: center;
+    color: #E4E0DC;
 }
 
 #otherLinks {
@@ -41,6 +43,7 @@ footer {
     margin-top: 20px;
     border-top: 1px solid #2A3965;
     text-align: center;
+    color: #2A3965;
 }
 
 footer ul {
@@ -57,7 +60,7 @@ h1, h2 {
 }
 
 h1 {
-    color: white;
+    color: #E4E0DC;
     width: 100%;
     text-align: center;
     display: block;
@@ -210,9 +213,10 @@ fieldset {
     grid-column: 1 / -1;
     text-align: right;
     font-size: 30px;
-    padding-top: 7px;
-    padding-right: 10px;
+    padding: 6px 10px;
     border: 2px solid #2A3965;
+    background-color: #60c7ff;
+    overflow: hidden;
     
 }
 
