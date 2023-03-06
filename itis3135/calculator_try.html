@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="scripts/calculator.js"></script>
+    <title>Calculator | Parker Cook's Popular Cheetah  | ITIS 3135</title>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Calculator</h2>
+        <div class="grid-container">
+            <div class="calculator-display" id="calculator-display">0</div>
+            <button class="action-secondary" id="calculator-clear">C</button>
+            <button class="action-secondary" id="calculator-sign">+/-</button>
+            <button class="action-secondary" id="calculator-percentage">%</button>
+            <button class="action-primary" id="calculator-divide">/</button>
+            <button class="number" id="calculator-7">7</button>
+            <button class="number" id="calculator-8">8</button>
+            <button class="number" id="calculator-9">9</button>
+            <button class="action-primary" id="calculator-multiply">x</button>
+            <button class="number" id="calculator-4">4</button>
+            <button class="number" id="calculator-5">5</button>
+            <button class="number" id="calculator-6">6</button>
+            <button class="action-primary" id="calculator-subtract">-</button>
+            <button class="number" id="calculator-1">1</button>
+            <button class="number" id="calculator-2">2</button>
+            <button class="number" id="calculator-3">3</button>
+            <button class="action-primary" id="calculator-add">+</button>
+            <button class="number-wide" id="calculator-0">0</button>
+            <button class="number" id="calculator-decimal">.</button>
+            <button class="action-primary" id="calculator-equals">=</button>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+        $("#header").load("components/header.html");
+        $("#footer").load("components/footer.html");
+    </script>
+</body>
+</html>
