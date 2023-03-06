@@ -2,7 +2,7 @@
     <h1>Parker Cook's Popular Cheetah</h1>
     <nav>
         <div id="mainLinks"></div>
-        <div id="externalLinks"></div>
+        <div id="otherLinks"></div>
         <!-- <a href="index.html">Home</a>
         <a href="introduction.html">Intro</a>
         <a href="contract.html">Contract</a>
@@ -15,7 +15,7 @@
 </header>
 <script>
     const path = String(location.pathname.split("/").splice(-1));
-    const links = {
+    const mainLinks = {
         "1": {
             "url": "index.html",
             "text": "Home",
@@ -67,18 +67,43 @@
             "alt": "Calculator FCC JavaScript assignment"
         }
     };
-    const linkSeparator = " | ";
-    let htmlString = ""
-
-    for (var id in links) {
-        if (path === links[id]["url"]) {
-            htmlString += "<a href='" + links[id]["url"] + "' class='active'>" + links[id]["text"] + "</a>";
-        } else {
-            htmlString += "<a href='" + links[id]["url"] + "'>" + links[id]["text"] + "</a>";
-        }
-        if (Number(id) < Object.keys(links).length) {
-            htmlString += linkSeparator;
+    const otherLinks= {
+        "1": {
+            "url": "stuff/@M@Z1NG f1l3💯.htm",
+            "text": "Crappy",
+            "alt": "Crappy webpage assignment"
+        },
+        "2": {
+            "url": "cookcreativedesign.co",
+            "text": "Design Co.",
+            "alt": "Design Company assignment main page"
         }
     }
-    $("#mainLinks").html(htmlString);
+    const linkSeparator = " | ";
+    let htmlStringMain = "";
+    let htmlStringOther = "";
+
+    for (var id in mainLinks) {
+        if (path === mainLinks[id]["url"]) {
+            htmlStringMain += "<a href='" + mainLinks[id]["url"] + "' class='active'>" + mainLinks[id]["text"] + "</a>";
+        } else {
+            htmlStringMain += "<a href='" + mainLinks[id]["url"] + "'>" + mainLinks[id]["text"] + "</a>";
+        }
+        if (Number(id) < Object.keys(mainLinks).length) {
+            htmlStringMain += linkSeparator;
+        }
+    }
+    $("#mainLinks").html(htmlStringMain);
+
+    for (var id in otherLinks) {
+        if (path === otherLinks[id]["url"]) {
+            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "' class='active'>" + otherLinks[id]["text"] + "</a>";
+        } else {
+            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "'>" + otherLinks[id]["text"] + "</a>";
+        }
+        if (Number(id) < Object.keys(otherLinks).length) {
+            htmlStringOther += linkSeparator;
+        }
+    }
+    $("#otherLinks").html(htmlStringOther);
 </script>
