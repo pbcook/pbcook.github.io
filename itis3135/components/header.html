@@ -1,18 +1,16 @@
-<header>
-    <h1>ITIS 3135 | Parker Cook's Popular Cheetah</h1>
-    <nav>
-        <div id="mainLinks"></div>
-        <div id="otherLinks"></div>
-        <!-- <a href="index.html">Home</a>
-        <a href="introduction.html">Intro</a>
-        <a href="contract.html">Contract</a>
-        <a href="tables.html">Tables</a>
-        <a href="forms.html">Forms</a>
-        <a href="stuff/@M@Z1NG%20f1l3💯.htm">Crappy</a>
-        <a href="website_evaluations.html">Website Evaluations</a>
-        <a href="firstscripts.html">First JavaScripts</a> -->
-    </nav>
-</header>
+<h1>ITIS 3135 | Parker Cook's Popular Cheetah</h1>
+<nav>
+    <div id="mainLinks"></div>
+    <div id="otherLinks"></div>
+    <!-- <a href="index.html">Home</a>
+    <a href="introduction.html">Intro</a>
+    <a href="contract.html">Contract</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="stuff/@M@Z1NG%20f1l3💯.htm">Crappy</a>
+    <a href="website_evaluations.html">Website Evaluations</a>
+    <a href="firstscripts.html">First JavaScripts</a> -->
+</nav>
 <script>
     const path = String(location.pathname.split("/").splice(-1));
     const mainLinks = {
@@ -38,7 +36,7 @@
         },
         "5": {
             "url": "forms.html",
-            "text": "Forms",
+            "text": "Form",
             "alt": "Forms assignment"
         },
         "6": {
@@ -65,6 +63,21 @@
             "url": "calculator_fcc.html",
             "text": "Calculator FCC",
             "alt": "Calculator FCC JavaScript assignment"
+        },
+        "11": {
+            "url": "arrays.html",
+            "text": "Arrays",
+            "alt": "Arrays JavaScript Assignment"
+        },
+        "12": {
+            "url": "slideshow.html",
+            "text": "Slideshow",
+            "alt": "Slideshow jQuery Assignment"
+        },
+        "13": {
+            "url": "project_1.html",
+            "text": "Project 1",
+            "alt": "Project 1 assignment"
         }
     };
     const otherLinks= {
@@ -77,6 +90,11 @@
             "url": "cookcreativedesign.co",
             "text": "Design Co.",
             "alt": "Design Company assignment main page"
+        },
+        "3": {
+            "url": "accessibility/Cook-Activity_Accessibility.html",
+            "text": "Accessibility",
+            "alt": "Accessibility assignment page"
         }
     }
     const linkSeparator = " | ";
@@ -97,9 +115,9 @@
 
     for (var id in otherLinks) {
         if (path === otherLinks[id]["url"]) {
-            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "' class='active'>" + otherLinks[id]["text"] + "</a>";
+            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "' class='active' target='_blank'>" + otherLinks[id]["text"] + "</a>";
         } else {
-            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "'>" + otherLinks[id]["text"] + "</a>";
+            htmlStringOther += "<a href='" + otherLinks[id]["url"] + "' target='_blank'>" + otherLinks[id]["text"] + "</a>";
         }
         if (Number(id) < Object.keys(otherLinks).length) {
             htmlStringOther += linkSeparator;

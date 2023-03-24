@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -11,21 +11,20 @@
     <title>Contract | Parker Cook's Popular Cheetah  | ITIS 3135</title>
 </head>
 <body>
-    <div id="header"></div>
+    <header id="header"></header>
     <main>
         <h2>Contract</h2>
         <p>I, Parker B. Cook agree to abide by the terms of the course contract in my Spring 2023 ITIS-3135-091 Web Design and Develoment course with my instructor, Professor D.I. von Briesen.</p>
-        <p>I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
-        <p>I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.</p>
-        <p>I also understand that given the structure and content of this class it's possible to find many examples online or even view my classmates' code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.</p>
-        <p>Signed: Parker B. Cook, 1/27/2023 </p>
+        <p>I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
+        <p>Signed: Parker B. Cook, 1/27/2023</p>
     </main>
-    <div id="footer"></div>
+    <footer id="footer">
+        <a href="https://validator.w3.org/check?uri=referer">HTML validation</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS validation</a>
+    </footer>
     <script>
         $("#header").load("components/header.html");
         $("#footer").load("components/footer.html");
-        const pathname = String(location.pathname.split("/").splice(-1));
-        let currentPage = document.getElementById()
     </script>
 </body>
 </html>

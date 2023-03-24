@@ -11,11 +11,11 @@
         <link rel="stylesheet" href="styles/default.css">
     </head>
     <body>
-        <div id="header"></div>
+        <header id="header"></header>
         <main>
             <h2>Parker Cook</h2>
             <figure>
-                <img src="images/parkerandcat.jpg" alt="Parker with his cat Rocket" width="400">
+                <img src="images/parkerandcat.jpg" alt="Parker with his cat Rocket" class="main-image">
                 <figcaption><i>My cat Rocket</i></figcaption>
             </figure>
             <h3>Personal Background</h3>
@@ -45,12 +45,10 @@
             <h3>I'd also like to Share:</h3>
             <p>I am not Spiderman.</p>
         </main>
-        <div id="footer"></div>
+        <footer id="footer"></footer>
         <script>
             $("#header").load("components/header.html");
             $("#footer").load("components/footer.html");
-            const pathname = String(location.pathname.split("/").splice(-1));
-            let currentPage = document.getElementById()
         </script>
     </body>
 </html>

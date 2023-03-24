@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Calculator FCC | Parker Cook's Popular Cheetah | ITIS 3135</title>
+        <title>Arrays | Parker Cook's Popular Cheetah | ITIS 3135</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,21 @@
     <body>
         <header id="header"></header>
         <main>
-            <h2>Calculator - FCC</h2>
-            <p>I completed this assignment in <a href="calculator_try.html">calculator_try</a> and have it working.</p>
+            <h2>Arrays</h2>
+            <button onclick=addSalary()>Add Salary</button>
+            <button onclick=displayResults()>Display Results</button>
+            <button onclick=displaySalary()>Display Salary</button>
+            <div id="results"></div>
         </main>
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <p>Made by Cook Creative Design Co.</p>
+            <a href="https://validator.w3.org/check?uri=referer">HTML validation</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS validation</a>
+        </footer>
         <script>
             $("#header").load("components/header.html");
             $("#footer").load("components/footer.html");
-            const pathname = String(location.pathname.split("/").splice(-1));
-            let currentPage = document.getElementById()
         </script>
+        <script src="scripts/arrays.js"></script>
     </body>
 </html>

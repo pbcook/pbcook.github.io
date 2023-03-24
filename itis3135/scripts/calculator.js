@@ -3,6 +3,7 @@ let firstValue = 0;
 let secondValue = 0;
 let numDecimalSpots = 0;
 let decimalUsed = false;
+let repeat = false;
 let action = "";
 
 function updateDisplay() {
@@ -16,6 +17,7 @@ function clearDisplay() {
     secondValue = 0;
     numDecimalSpots = 0;
     decimalUsed = false;
+    repeat = false;
     console.log("cleared!");
 }
 
@@ -32,11 +34,13 @@ function percentage() {
 function updateAction(buttonAction) {
     action = buttonAction
     firstValue = displayValue;
-    displayValue = 0;
+    displayValue = null;
     numDecimalSpots = false;
     decimalUsed = false;
     updateDisplay();
     console.log(action);
+    displayValue = 0;
+    repeat = false;
 }
 
 function addToDisplay(num) {
@@ -76,6 +80,7 @@ function equals() {
             break;
     }
     updateDisplay();
+    repeat = true;
 }
 
 window.onload = function() {
