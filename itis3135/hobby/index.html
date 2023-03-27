@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Astronomy</title>
+    <style>
+        @media (min-width: 800px) {
+            body {
+                margin: 0 20%;
+            }
+        }
+
+        body {
+            background-color: #1e2237;
+            font-family: "Poppins";
+        }
+
+        h1 {
+            color: #d4dffa;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        nav a {
+            padding: 0 5px;
+            color: lightgray;
+        }
+
+        h2 {
+            color: #f9fad4;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        footer {
+            padding-top: 15px;
+            color: #d4dffa;
+        }
+
+        footer a {
+            color: lightgray;
+            padding: 0 5px;
+        }
+
+        #validation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        a {
+            color: lightgray;
+        }
+
+        a:hover {
+            color: lightskyblue;
+        }
+
+        img {
+            max-width: 400px;
+            display: block;
+            margin: auto;
+            border: 1px solid darkslategray;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 15px;
+            color: #b1b1b1;
+        }
+
+        p {
+            text-align: left;
+            padding: 10px;
+            color: lightgray;
+        }
+
+        table {
+            padding: 10px;
+            color: lightgray;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 2px solid gray;
+            padding-left: 5px;
+        }
+
+        li {
+            color: lightgray;
+            padding-top: 8px;
+        }
+
+        strong {
+            color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astronomy</h1>
+        <nav>
+            <a href="#" id="about-nav">About</a>
+            <a href="#" id="home-nav">Home</a>
+            <a href="#" id="events-nav">Events</a>
+            <a href="#" id="getting-started-nav">Getting Started</a>
+            <a href="#" id="why-astronomy-nav">Why Astronomy?</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+               <img src="images/parker-with-space-shuttle.jpg" alt="Parker in front of a space shuttle">
+               <figcaption>Me (Parker) in front of a replica space shuttle.</figcaption>
+            </figure>
+            <p>Hi! I'm Parker, and I've been fascinated by space and astronomy for as long as I can remember It all started with my favorite book when I was much, much younger - "There's No Place Like Space." Ever since then, I've always been excited about astronomy and wanted to learn more about the subject. One of my favorite memories was attending space camp in Huntsville, Alabama (in the image above).</p>
+            <p>I have a telescope I use to look at many things in the night sky, and I've started to explore astrophotgraphy so I can capture the amazing things I see through it. I've been able to see two rocket launches in person - one in Virginia, and another in Florida. I was fortunate to have an internship with NASA in the fall of 2020, where I worked with a department of the Langley Research Center on risk management software to be used throughout various projects and teams within NASA.</p>
+            <p>I continue to learn more about the subject as much as I can. Meteor showers and eclipses are what I especially look forward to (some of the events I'm looking foward to this year are in the "Events" tab above.) I hope you can use this website to gain an interest in this "out-of-this-world" hobby!</p>
+        </section>
+        <section id="home">
+            <h2>Home</h2>
+            <figure>
+                <img src="images/astronomy-home.jpg" alt="Night sky with stars and a tree in corner">
+                <figcaption>The night sky, image taken by me</figcaption>
+            </figure>
+            <p>Welcome to the page about my hobby, astronomy. The night sky is fascinating, full of mysterious wonders and discoveries. From the planets to meteors to far-away stars, there's always more to see and learn about.</p>
+            <p>Use the navigation menu at the top of the screen to learn more about the hobby, upcoming astronomical events, and how you can get started.</p>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+            <figure>
+                <img src="images/lunar-eclipse.jpg" alt="Lunar eclipse">
+                <figcaption>The beginnings of a total lunar eclipse on May 15, 2022.</figcaption>
+            </figure>
+            <p>Want to know more about some upcoming events in the night sky? See the table below for a variety of phenonemons you can look forward to in 2023.</p>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>April 20, 2023</td>
+                    <td>Hybrid solar eclipse</td>
+                    <td>Experience the rare hybrid solar eclipse, which transitions fron an annular solar eclipse to a total soalr eclipse as the shadow of the moon crosses across the surface of Earth. Experience totality in East Timor, Indonesia, and Australia.</td>
+                </tr>
+                <tr>
+                    <td>May 5, 2023</td>
+                    <td>Penumbral lunar eclipse</td>
+                    <td>This penumbral lunar eclipse will be best viewed with the assistance of binoculars, a telescope, or another way to see the moon up close. Look as the moon transitions to a darker gray as it passes through the partial shadow of Earth.</td>
+                </tr>
+                <tr>
+                    <td>August 13, 2023</td>
+                    <td>Perseid meteor shower peak</td>
+                    <td>Experience one of the best meteor showers of the year. Find an area with a good view of the sky with little light pollution and experience close to 100 metors per hour.</td>
+                </tr>
+                <tr>
+                    <td>August 31, 2023</td>
+                    <td>Supermoon</td>
+                    <td>Experience a supermoon, where the full moon is visible while slightly closer to Earth than normal. The moon will appear noticibly larger and brighter than normal. This full moon will also be a "blue moon", which despite the name, simply means that it is the second full moon in a month.</td>
+                </tr>
+                <tr>
+                    <td>October 14, 2023</td>
+                    <td>Annular solar eclipse</td>
+                    <td>Witness an annular solar eclipse, where the moon passes in front of the sun far enough away to create a unique "ring" shape of the sun surrounding the moon. Experience this eclipse in portions of North America. Be sure to always use eclipse glasses or other proper eye protection when looking directly at the sun throughout this eclipse, as a portion of the sun's surface is still directly visible.</td>
+                </tr>
+                <tr>
+                    <td>December 14, 2023</td>
+                    <td>Geminid meteor shower peak</td>
+                    <td>The Geminids are one of the largest meteor showers of the year. Experience close to 150 metors per hour with a good view of the sky in dark conditions with little light pollution. </td>
+                </tr>
+            </table>
+        </section>
+        <section id="getting-started">
+            <h2>Getting started</h2>
+            <figure>
+                <img src="images/astrophotgraphy-dipper.jpg" alt="Big dipper">
+                <figcaption>The Big Dipper</figcaption>
+            </figure>
+            <p>Want to learn more about how to get started with astronomy? Here's some great first steps:</p>
+            <ul>
+                <li><strong>Get involved</strong>: Join a local astronomy group to learn more with like-minded individuals. One great organization in the Charlotte Area is the <a href="https://charlotteastronomers.org/">Charlotte Amateur Astronomers Club (CAAC)</a>.</li>
+                <li><strong>Start learning</strong>: There's plenty of great resources about various aspects of astronomy, stargazing, spaceflight, and more. There's various <a href="https://astronomy.com/">websites</a> for staying informed, and many YouTube videos and channels that cover almost everything you conld want to know. <a href="https://www.nasa.gov/">NASA's website</a> also outlines some space-related news.</li>
+                <li><strong>Look up</strong>: It sounds quite simple, but to truly appreciate space, it's great to spend time looking at it. Use maps to find various stars and constellations, or find upcoming celestial events to look out for.</li>
+                <li><strong>Get a closer view</strong>: Sometimes your eyes arent enough, especially for seeing up-close vies of planets, nebulas, or other far-away objects in space. For this, binoculars or a telescope can be immensely helpful. There's lots of great beginner options available if you would like one yourself, and there's also frequently a telescope available at local astronomy-related events.</li>
+                <li><strong>Take some pictures</strong>: Once you've seen some amazing things in space, try some basic astrophotgraphy you can always remember what you saw. In fact, all the space images you can see on the pages of this site were taken by me! Although phones aren't the best for this, they can often be decent enough for some basic picture-taking, especially if used in conjuction with a telescope or other device that can do the zooming-in for you. Most recent phones today also have a built-in long exposure mode that works well for taking wide images of the night sky.</li>
+            </ul>
+        </section>
+        <section id="why-astronomy">
+            <h2>Why Astronomy?</h2>
+            <figure>
+                <img src="images/full-moon.jpg" alt="Full moon">
+                <figcaption>
+                    The full moon, taken through my telescope
+                </figcaption>
+            </figure>
+            <p>Astronomy is a subject that has fascinted people for thousands of years. From planets to comets to entire other galaxies, there's always plenty to see and learn more about. We know so much but so little at the same time about what's all around us in space. Gaining an appreciation for our planetary neighbors is an rewarding and exciting process. Seeing a glimpse into the universe is something that's truly special.</p>
+            <p>Astronomy as a hobby offers a great sense of community. There's plenty of organizations where you can meet other amateur astronomers and learn more from like-minded people. Astronomy is also a great way to connect with just about anyone, even if they might not have a huge passion for the subject. Anyone can look up at the sky or through a telescope and appreciate what is out there to see, whether it be the grandness of an eclipse or a nearby planet.</p>
+            <p>There's always something to learn when it comes to astronomy. Whether it be learning about upcoming celestial events, catching up on the latest finds, or reading more about the science of the universe, there's always more to learn. In fact, there's always new discoveries being made, from far-away galaxies to asteroids and comets right next door. One day, you too could be a part of the next great discovery in astronomy. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Site designed by <a href="https://webpages.charlotte.edu/pcook22/itis3135/cookcreativedesign.co/">Cook Creative Design Co.</a> &copy; 2023</p>
+        <span id="validation">
+            Validation links:
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fpcook22%2Fitis3135%2Fhobby%2Findex.html" target="_blank">HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fpcook22%2Fitis3135%2Fhobby%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a>
+        </span>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            console.log("jQuery loaded.");
+
+            //Hides all sections but home
+            let sections = $("section");
+            sections.not("#home").hide();
+
+            $("#about-nav").click(function() {
+                $("#about").show();
+                sections.not("#about").hide();
+            });
+
+            $("#home-nav").click(function() {
+                $("#home").show();
+                sections.not("#home").hide();
+            });
+
+            $("#events-nav").click(function() {
+                $("#events").show();
+                sections.not("#events").hide();
+            });
+
+            $("#getting-started-nav").click(function() {
+                $("#getting-started").show();
+                sections.not("#getting-started").hide();
+            })
+
+            $("#why-astronomy-nav").click(function() {
+                $("#why-astronomy").show();
+                sections.not("#why-astronomy").hide();
+            })
+        })
+    </script>
+</body>
+</html>
