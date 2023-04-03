@@ -1,0 +1,45 @@
+body {
+    background-color: #D6DBD2;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-header {
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #0A122A;
+    margin: 0;
+}
+
+.nav-link {
+    color: #252360;
+    font-family: 'Roboto Flex';
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #D6DBD2;
+}
+
+h2 {
+    font-family: 'Arvo';
+    color: #252360;
+    text-align: center;
+    font-size: 40px;
+}
+
+#map {
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    border: 2px solid #252360;
+    border-radius: 5px;;
+}
