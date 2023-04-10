@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="default.css">
     <title>Gallery | UCEC STEM Club</title>
     <link rel="stylesheet" href="default.css">
     <script src="default.js"></script>
@@ -11,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Arvo&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -27,6 +32,20 @@
     </header>
     <main>
         <h2>See what we're up to.</h2>
+        <div class="gallery-container">
+            <div class="gallery-left">
+                <img src="images/banana_instrument.png" alt="Banana with wires connected to it to form an instrument">
+                <img src="images/competition.jpg" alt="UCEC Stem Club members controlling a robot at a competition">
+                <img src="images/marble_maze.png" alt="Rubber bands looped to make a maze">
+                <img src="images/robot_maze.png" alt="Robot autonomously navigating a maze">
+            </div>
+            <div class="gallery-right">
+                <img src="images/robot_painting.png" alt="Robot driving in paint to make a painging">
+                <img src="images/robot_painting_done.png" alt="Complete painting made by a robot">
+                <img src="images/robot_playing_keyboard.png" alt="Robot pushing down a keybaord key">
+                <img src="images/underwater_rov.jpg" alt="Testing an underwater ROV in a large tank of water">
+            </div>
+        </div>
     </main>
     <footer>
 

@@ -36,10 +36,132 @@ h2 {
     font-size: 40px;
 }
 
+h3 {
+    color: #252360;
+    font-family: 'Arvo';
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    color: #252360;
+    font-family: 'Arvo';
+    text-align: center;
+    font-size: 15px;
+}
+
 #map {
-    height: 300px;
-    width: 500px;
+    height: 200px;
+    max-width: 300px;
     margin: auto;
     border: 2px solid #252360;
     border-radius: 5px;;
+}
+
+.display-center {
+    text-align: center;
+}
+
+p, li {
+    color: #252360;
+    font-family: 'Roboto Flex';
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.display-box-container {
+    background-color: #c8d5e6;
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #252360;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .display-box-container {
+        margin: 10px;
+    }
+
+    p, .list-container {
+        display: block;
+        margin: auto;
+    }
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+label {
+    font-family: 'Roboto flex';
+    color: #252360;
+}
+
+.form-section {
+    padding: 5px 30px;
+}
+
+.display-image {
+    width: 400px;
+    display: block;
+    margin: auto;
+    border: 2px solid #252360;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-family: 'Roboto Flex';
+    text-align: center;
+    font-size: 14px;
+}
+
+figure {
+    padding: 15px;
+}
+
+.caution {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.submit {
+    margin-left: 200px;
+    background-color: #252360;
+    color: white;
+    border: 2px solid #363471;
+    border-radius: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: #252360;
+}
+
+.gallery-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-left {
+    grid-column: 1/1;
+}
+
+.gallery-right {
+    grid-column: 2/2;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    display: block;
 }
