@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | UCEC STEM Club</title>
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <script src="default.js"></script>
     <!-- Google Fonts -->
@@ -16,20 +18,60 @@
 <body>
     <header>
         <img src="images/logo-outline.png" alt="UCEC STEM Club logo" class="logo-header">
-        <!-- <h1>STEM Club</h1> -->
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="events.html" class="nav-link">Events</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="signup.html" class="nav-link">Sign Up</a>
-        </nav>
+        <div class="title-nav">
+            <h1>UCEC STEM Club</h1>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Join us!</h2>
+        <form action="">
+            <div class="form-section">
+                <label for="first-name">First name: </label>
+                <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="form-section">
+                <label for="last-name">Last name: </label>
+                <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div class="form-section">
+                <label for="email">Student email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-section">
+                <label for="why-us" class="whole-line">What types of STEM projects are you most interested in?</label>
+                <textarea name="why-us" id="why-us" cols="30" rows="3"></textarea>
+            </div>
+            <p class="keep-width">Two references are required to apply. These can be former teachers, club leaders, or anyone who can speak to your involvement in STEM activites.</p>
+            <div class="form-section">
+                <label for="reference-1-name">Reference 1 name: </label>
+                <input type="text" name="reference-1-name" id="reference-1-name" required>
+            </div>
+            <div class="form-section">
+                <label for="reference-1-email">Reference 1 email: </label>
+                <input type="email" name="reference-1-email" id="reference-1-email" required>
+            </div>
+            <div class="form-section">
+                <label for="reference-2-name">Reference 2 name: </label>
+                <input type="text" name="reference-2-name" id="reference-2-name" required>
+            </div>
+            <div class="form-section">
+                <label for="reference-2-email">Reference 2 email: </label>
+                <input type="email" name="reference-2-email" id="reference-2-email" required>
+            </div>
+            <input type="reset" class="reset form-button">
+            <input type="submit" class="submit form-button">
+        </form>
     </main>
     <footer>
-
+        <hr>
+        <p class="center">Site created by <a href="https://webpages.charlotte.edu/pcook22/itis3135/cookcreativedesign.co/">Cook Creative Design Co.</a> &copy; 2023</p>
     </footer>
 </body>
 </html>

@@ -4,32 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
     <title>Gallery | UCEC STEM Club</title>
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <script src="default.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Arvo&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <img src="images/logo-outline.png" alt="UCEC STEM Club logo" class="logo-header">
-        <!-- <h1>STEM Club</h1> -->
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="events.html" class="nav-link">Events</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="signup.html" class="nav-link">Sign Up</a>
-        </nav>
+        <div class="title-nav">
+            <h1>UCEC STEM Club</h1>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>See what we're up to.</h2>
+        <div class="gallery-container">
+            <div class="gallery-left">
+                <img src="images/banana_instrument.jpeg" alt="Banana with wires connected to it to form an instrument">
+                <img src="images/competition.jpeg" alt="UCEC Stem Club members controlling a robot at a competition">
+                <img src="images/marble_maze.jpeg" alt="Rubber bands looped to make a maze">
+                <img src="images/robot_maze.jpeg" alt="Robot autonomously navigating a maze">
+                <img src="images/underwater_rov.jpeg" alt="Testing an underwater ROV in a large tank of water">
+            </div>
+            <div class="gallery-right">
+                <img src="images/robot_painting.jpeg" alt="Robot driving in paint to make a painging">
+                <img src="images/robot_painting_done.jpeg" alt="Complete painting made by a robot">
+                <img src="images/robot_playing_keyboard.jpeg" alt="Robot pushing down a keybaord key">
+            </div>
+        </div>
     </main>
     <footer>
-
+        <hr>
+        <p class="center">Site created by <a href="https://webpages.charlotte.edu/pcook22/itis3135/cookcreativedesign.co/">Cook Creative Design Co.</a> &copy; 2023</p>
     </footer>
 </body>
 </html>

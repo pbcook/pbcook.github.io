@@ -1,3 +1,9 @@
+@media only screen and (min-width: 800px) {
+    p:not(.keep-width), form{
+        margin: 0 20vw;
+    }
+  }
+
 body {
     background-color: #D6DBD2;
     padding: 0;
@@ -29,6 +35,13 @@ header {
     color: #D6DBD2;
 }
 
+h1 {
+    color: white;
+    font-family: 'Arvo';
+    padding: 0;
+    margin: -2px 7px 9px 7px;
+}
+
 h2 {
     font-family: 'Arvo';
     color: #252360;
@@ -36,10 +49,160 @@ h2 {
     font-size: 40px;
 }
 
+h3 {
+    color: #252360;
+    font-family: 'Arvo';
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    color: #252360;
+    font-family: 'Arvo';
+    text-align: center;
+    font-size: 15px;
+}
+
 #map {
-    height: 300px;
-    width: 500px;
+    height: 200px;
+    max-width: 300px;
     margin: auto;
     border: 2px solid #252360;
     border-radius: 5px;;
+}
+
+.display-center {
+    text-align: center;
+}
+
+p, li {
+    color: #252360;
+    font-family: 'Roboto Flex';
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.display-box-container {
+    background-color: #c8d5e6;
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #252360;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .display-box-container {
+        margin: 10px;
+    }
+
+    p, .list-container {
+        display: block;
+        margin: auto;
+    }
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+label {
+    font-family: 'Roboto flex';
+    color: #252360;
+}
+
+.form-section {
+    padding: 5px 30px;
+}
+
+form p {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+form input:not(.form-button) {
+    width: 250px;
+}
+
+.display-image {
+    width: 400px;
+    display: block;
+    margin: auto;
+    border: 2px solid #252360;
+    border-radius: 5px;
+}
+
+.big-image {
+    max-width: 600px;
+    width: 80vw;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    filter: drop-shadow(5px 5px 5px gray);
+    border-radius: 10px;
+}
+
+figcaption {
+    font-family: 'Roboto Flex';
+    text-align: center;
+    font-size: 14px;
+}
+
+figure {
+    padding: 15px;
+}
+
+.caution {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.reset {
+    margin: 0 15px 0 30px;
+}
+
+.form-button {
+    margin-top: 10px;
+    background-color: #252360;
+    color: white;
+    border: 2px solid #363471;
+    border-radius: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: #252360;
+}
+
+.gallery-container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: auto;
+    margin: auto;
+}
+
+.gallery-left {
+    padding: 0 5px 0 10px;
+    grid-column: 1/1;
+}
+
+.gallery-right {
+    padding: 0 10px 0 5px;
+    grid-column: 2/2;
+}
+
+.gallery-container img {
+    max-width: calc(100%);
+    display: block;
+    margin: 10px 0;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 3px gray)
 }

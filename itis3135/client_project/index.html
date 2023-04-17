@@ -5,34 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | UCEC STEM Club</title>
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <script src="default.js"></script>
-    <!-- jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Arvo&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-    <!-- Material icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
     <header>
         <img src="images/logo-outline.png" alt="UCEC STEM Club logo" class="logo-header">
-        <!-- <h1>STEM Club</h1> -->
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="events.html" class="nav-link">Events</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="signup.html" class="nav-link">Sign Up</a>
-        </nav>
+        <div class="title-nav">
+            <h1>UCEC STEM Club</h1>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Hi! We're the UCEC STEM Club.</h2>
-        <video src="images/competition.MOV" height="400px" autoplay muted></video>
+        <figure>
+            <img src="images/competition.jpeg" alt="UCEC Stem club driving a robot in a competition" class="big-image">
+            <figcaption>UCEC Stem club competing in a county-wide robotics competition</figcaption>
+        </figure>
+        <p>We're a group of students passionate about everything Science, Technology, Engineering, and Math. <a href="signup.html">Join us</a> and help create something amazing!</p>
     </main>
     <footer>
+        <hr>
+        <p class="center">Site created by <a href="https://webpages.charlotte.edu/pcook22/itis3135/cookcreativedesign.co/">Cook Creative Design Co.</a> &copy; 2023</p>
     </footer>
 </body>
 </html>
