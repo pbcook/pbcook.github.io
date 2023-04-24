@@ -14,6 +14,8 @@
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="default.css">
     <script src="default.js"></script>
 </head>
@@ -34,17 +36,24 @@
     <main>
         <h2>Coming up next...</h2>
         <h3>Club Meeting Times</h3>
+        <div class="caution">
+            <span class="material-symbols-outlined">warning</span>
+            <p class="keep-width">Due to construction in Building A, meeting locations may vary as needed. Check back often on this page and look out for emails from Ms. Cook and other faculty for up-to-date information.</p>
+        </div>
         <div class="display-box-container">
-            <h4>When</h4>
-            <div class="list-container">
-                <p class="keep-width">Fridays 8:30am - 9:30am</p>
-                <p class="keep-width">Every other friday (school club days) after lunch</p>
+            <div class="display-when">
+                <h4>When</h4>
+                <ul>
+                    <li>Every Friday morning 8:30 a.m. - 9:30 a.m.</li>
+                    <li>First, thid, and fifth Fridays of each month (school club days) 12:30 p.m. - 1:15 p.m.</li>
+                </ul>
             </div>
-            <hr>
-            <h4>Where</h4>
-            <p class="keep-width">Meet in Ms. Cook's Room in Building A</p>
-            <div id="map"></div>
-            <p class="caution keep-width">Due to construction in Building A, meeting locations may vary as needed. Check back often on this page and look out for emails from Ms. Cook for up-to-date information.</p>
+            <span class="vertical-divide"></span>
+            <div class="display-where">
+                <h4>Where</h4>
+                <p class="keep-width">Meet in Ms. Cook's Room in Building A</p>
+                <div id="map"></div>
+            </div>
         </div>
     </main>
     <footer>

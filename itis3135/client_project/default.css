@@ -2,7 +2,16 @@
     p:not(.keep-width), form{
         margin: 0 20vw;
     }
-  }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 40px;
+}
 
 body {
     background-color: #D6DBD2;
@@ -60,15 +69,15 @@ h4 {
     color: #252360;
     font-family: 'Arvo';
     text-align: center;
-    font-size: 15px;
+    font-size: 24px;
 }
 
 #map {
-    height: 200px;
-    max-width: 300px;
-    margin: auto;
+    height: 200px;width: 250px;
     border: 2px solid #252360;
-    border-radius: 5px;;
+    border-radius: 5px;
+    margin: auto;
+    left: 5px;
 }
 
 .display-center {
@@ -79,28 +88,32 @@ p, li {
     color: #252360;
     font-family: 'Roboto Flex';
     padding-left: 10px;
-    padding-top: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+li {
+    padding-bottom: 20px;
 }
 
 .display-box-container {
     background-color: #c8d5e6;
-    padding: 10px;
     max-width: 700px;
     margin: auto;
     border: 1px solid #252360;
     border-radius: 10px;
     text-align: center;
+    display: flex;
 }
 
-@media only screen and (max-width: 700px) {
-    .display-box-container {
-        margin: 10px;
-    }
+.display-when, .display-where {
+    padding: 10px;
+    width: 50%;
+}
 
-    p, .list-container {
-        display: block;
-        margin: auto;
-    }
+.vertical-divide {
+    border: 1px solid #252360;
+    margin: 40px 0;
 }
 
 hr {
@@ -131,6 +144,7 @@ form input:not(.form-button) {
     margin: auto;
     border: 2px solid #252360;
     border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px gray);
 }
 
 .big-image {
@@ -157,8 +171,18 @@ figure {
     background-color: lightgoldenrodyellow;
     border: 2px solid orange;
     border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.caution .material-symbols-outlined {
+    padding-left: 15px;
+}
+
+.caution p {
+    padding-right: 15px;
 }
 
 .reset {
@@ -204,5 +228,10 @@ a {
     display: block;
     margin: 10px 0;
     border-radius: 10px;
-    filter: drop-shadow(3px 3px 3px gray)
+    filter: drop-shadow(1px 1px 1px gray)
+}
+
+figcaption {
+    margin-top: 7px;
+    font-size: 14px;
 }
